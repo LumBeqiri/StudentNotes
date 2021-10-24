@@ -1,0 +1,718 @@
+/*Fonts 
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+*/
+
+
+body{
+    margin:0;
+    padding:0;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+}
+
+h3{margin:0px;}
+
+/*Navbar, header styles ********************************/
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 300px;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+}
+.header a:hover{
+    font-weight:bold;
+   /* font-size:14px;*/
+}
+/*.slider{
+    display: flex;
+    min-width: 960px;
+    height: 100%;
+}*/
+
+
+/*Slider*/
+@keyframes slider {
+    0% { left: 0%; }     
+    30% { left: 0%; }    
+    33% { left: -100%; }
+    63% { left: -100%; }
+    66% { left: -200%; }
+    100% { left: -200%; }
+    }
+#slider{
+    overflow: hidden;
+}
+#slider figure img {
+    width: 33.333%;
+    float: left;
+    height: 600px;
+    object-fit: cover;
+}
+#slider figure{
+    position: relative;
+    width: 300%;
+    margin:0;
+    left: 0;
+    animation:10s slider infinite;
+}
+/*Slider*/
+
+nav{
+    background-color:white;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    margin:0px;
+}
+
+nav ul li{
+    margin-right:20px;
+    text-transform: uppercase;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #33334f;
+    font-size:13px;
+}
+
+nav ul li a:hover{
+    color:#33334fd6;
+}
+
+.logo {
+    float: left;
+}
+
+.page-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1A61F9;
+    color: white;
+    height: 90px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/***********************************************/
+
+/*Homes styles ********************************/
+
+.home-cat-title{display: flex;
+justify-content: center;}
+
+/**********************************************/
+
+.home-categories{margin-top:15px}
+
+.home-about{
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 1px dashed #1a61ff;
+}
+
+
+/*Buttons *******************************************/
+.button1{
+        border: 1px solid #1a61ff;
+        padding: 12px;
+        color: #1a61ff;
+}
+
+.button1:hover{
+    background-color: #1a61ff;
+    color:white;
+}
+
+.button2{
+    padding: 15px 16px;
+    text-decoration: none;
+    border:1px solid #1a61ff;
+    color: white;
+    background: #1a61ff;
+    display: inline-block;
+    /* display: inline-block because of the issue Margin Collapse*/
+}
+
+.button2:hover{
+    padding: 15px 16px;
+    text-decoration: none;
+    border: 1px solid #1a61ff;
+    color:#1a61ff;
+    background: white;
+    display: inline-block;
+    /* display: inline-block because of the issue Margin Collapse*/
+}
+
+
+
+
+
+.button3{
+    padding: 15px 16px;
+    text-decoration: none;
+    border: 1px solid white;
+    color: #6b6464;
+    background: white;
+    display: inline-block;
+    /* display: inline-block because of the issue Margin Collapse*/
+}
+
+.button3:hover{
+    padding: 15px 16px;
+    text-decoration: none;
+    border: 1px solid white;
+    color:white;
+    background: #6b6464;
+    display: inline-block;
+    /* display: inline-block because of the issue Margin Collapse*/
+}
+
+.search-cat {
+    display: flex;
+    justify-content: center;
+}
+.search-input-style {
+    padding:20px 10px;
+    width:50%;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+
+
+
+/*Buttons ends here **********************************/
+
+
+/*Footer styles*************************************************************/
+
+.footer{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    height: 290px;
+    width: 100%;
+    margin-top: 60px;
+    font-family: Montserrat, sans-serif;
+    background-color: white;
+    border-top: 1px dashed #1a61ff;
+}
+
+
+.fitem-1 h2,.fitem-2 h2,.fitem-3 h2{
+    color:#1a61ff;
+}
+
+.fitem-1 ul li {padding-top:4px}
+
+.fitem-1 ul {list-style-type: none;padding:0px}
+.fitem-1 ul li a {color: #33334f;text-decoration: none;}
+.fitem-1 ul li a:hover {color: #33334fd6;text-decoration: none;}
+.fitem-2 p {color:#33334f;}
+.our-app {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+.email-form{
+    padding: 10px 30px;
+
+}
+
+.submit-button{
+    border: 1px solid #1a61ff;
+    padding: 11px 18px;
+    background-color: #1a61ff;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.submit-button:hover{
+    border:1px solid #1a61ff;
+    background-color:white;
+    color:#1a61ff;
+}
+
+/* social icons colors*/
+.fcolor {
+    color:dodgerblue;
+}
+
+.tcolor {
+    color:dodgerblue;
+}
+
+.licolor {
+    color:#0077B5
+}
+
+.instcolor{
+    color:rgb(195, 42, 163);
+}
+
+.mediumcolor{
+    color:rgba(0,0,0,.84);
+}
+.social{
+    padding-top:12px;
+    
+}
+
+.social i{
+    padding-right:15px;
+    
+}
+
+.social a{
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.social a:hover{
+    opacity: 1.0;
+}
+
+
+
+/*Footer styles ends here*********************************************************/
+
+
+/*About Css*/
+
+.about-title{
+
+    background-color: #373844;
+    color: #ffffff;
+    padding-left: 203px;
+    font-size: 26px;
+    font-family: Segoe UI;
+}
+.about-photo {
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border: #373844 2px solid;
+    margin-left: 200px;
+}
+.aboutpage {
+    float: right;
+    width: 46%;
+    padding-right: 140px;
+    padding-top: 25px;
+}
+.about-text p {
+    font-family: Montserrat, sans-serif;
+    line-height:20px;
+}
+.about-text h4 {
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    color: #373844;
+    height: 5px;
+}
+/*About CSS*/
+
+
+
+/*Responsive media queries ********************/
+
+@media all and (max-width: 800px){
+    
+    .header{flex-direction: column}
+    
+    nav ul{
+        flex-direction: column;
+        float:left;
+    }
+    nav ul li {
+        text-align:center;
+    }
+    
+    
+    
+    nav ul li:last-child{
+        margin-top: 12px;
+        margin-bottom: 20px;
+    }
+}
+
+/*Responsive media queries ends here ********************/
+
+
+/*Layouts. Define Layouts here--***********************************/
+
+.layout-cont1{
+    display: flex;
+    flex-wrap:wrap;
+    width:100%;
+    justify-content: space-around;
+}
+
+
+
+.layout-item1{
+    width:40%;
+    padding-top: 20px;
+}
+
+.layout-item2{
+    width: 40%;
+    display: flex;
+    padding-top: 20px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*Layouts ends here ***********************/
+
+
+.about-item img{
+    border: #373844 5px solid;
+}
+
+
+  
+  @media screen and (max-width: 800px) {
+    .flex-direction{
+    flex-direction:column;
+    }
+  .div1{
+    width:202px;
+    height:131px;
+    border-right:none;
+    border-bottom:1px solid black;
+    }
+    .div2{
+      width:202px;
+      height:107px;
+    }
+    .div2 span{
+      line-height:107px;
+    }
+
+    .layout-cont1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .layout-item1{
+        width:80%;
+    }
+    }
+  
+  .content{
+    padding: 10px;
+    margin: 16px 0;
+}
+
+
+.content-text{
+    font-size: 50px;
+    text-align: center;
+    color: #1A61F9;
+  } 
+.text{
+    text-align:center;
+}   
+.text1{
+    
+    margin: 16px 0;
+    text-align:left;
+    width:300px; 
+    padding: 20px;
+    outline:none;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid #1a61ff ; 
+    font-size: 20px;
+    
+}
+.text2{
+    margin: 16px 0;
+    text-align:left;
+    width:650px; 
+    padding: 20px;
+    outline:none;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid #1a61ff ; 
+    font-size: 20px;
+    border-radius:3px;
+
+}
+.button{
+
+    border: 1px solid #1A61F9;
+    padding: 11px 18px;
+    background-color: #1A61F9;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius:3px
+
+}
+
+/*SignIn css */
+
+.signIncontanier{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.loginBox{
+    margin-top: 130px;
+    margin-bottom: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+}
+.back{
+    width: 100%;
+    background-color: rgba(51,113,128);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    border-radius: 10px;
+}
+
+.back img{
+    margin-top: -75px;
+    margin-bottom: 40px;
+    width: 25%;
+    border-radius: 50%;
+    border: solid #fff 5px;
+}
+
+.back h3{
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Segoe UI';
+    margin-bottom: 40px;
+}
+.back form{
+    width: 70%;
+}
+
+.back form p{
+    font-size:18px;
+    color:#fff;
+    font-family: 'Segoe UI'
+}
+
+.back form input{
+    box-shadow: 0;
+    border: 0;
+    background-color: rgba(255,255,255,.1);
+    width: 98%;
+    margin-bottom: 35px;
+    height: 30px;
+    border:solid 2px rgba(255,255,255,.5);
+    font-size:20px;
+    color:#fff;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: left;
+    transition:all 250ms ease;
+}
+.back form .inp:focus{
+    outline:0px;
+    background-color:rgba(255,255,255,.2);
+    border:solid 2px rgba(255,255,255,.01);
+    color: #fff;
+}
+
+.back form .subSignIN{
+    width: 100%;
+height: 50px;
+font-size: 30px;
+font-family: 'Segoe UI';
+border: 0;
+text-align: center;
+background: rgba(255,0,0,0.0);
+border-bottom: solid 3px #fff;
+color: #fff;
+margin-top: 35px;
+transition: all 200ms ease;
+}
+.back form .subSignIN:hover{
+    width: 120%;
+    margin-left: -10%;
+}
+.back form .subSignIN:active{
+    background-color: rgba(255,255,255,0.2);
+    outline:0;
+    border-radius: 5px;
+
+}
+.back form .subSignIN:focus{
+    background-color: rgba(255, 255, 255, 0.2);
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+}
+
+.he{
+    text-decoration: none;
+    color: #fff;
+    font-size:18px;
+    transition: all 300ms ease;
+    line-height:30px;
+}
+
+.he:hover{
+    color:rgb(184, 203,214);
+
+}
+
+.back form .subSignIN:hover{
+    cursor: pointer;
+    border: 120%;
+}
+
+.error{
+    font-family: 'Segoe UI';
+    font-size: 15px;
+    color:white;
+}
+
+.signUperror{
+    font-family: 'Segoe UI';
+    color:#fff;
+}
+
+/*upload page*/
+
+
+.signIncontanier-upload{
+    display: flex;
+    flex-wrap:wrap;
+    width:100%;
+    justify-content: space-around;
+}
+.loginBox-upload{
+    width:430px;
+    padding-top: 100px;
+    
+}
+.uploadfilebox{
+    width: 525px;
+    display: flex;
+    padding-top: 100px;
+    justify-content: center;
+    
+}
+.back-upload{
+    width: 100%;
+    background-color: #1a61ff ; 
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    border-radius: 10px;
+}
+
+.back-upload img{
+    margin-top: 35px;
+    margin-bottom: 25px;
+    width: 40%;
+    border-radius: 50%;
+    border: solid #fff 5px;
+}
+.form-upload{
+    padding: 50px;
+    color: white;
+}
+
+.back-upload h3{
+    color: white;
+    font-family: 'Segoe UI';
+    font-size: 25px;
+}
+.back-upload p{
+    color: white;
+    font-family: 'Segoe UI';
+    font-size: 20px;
+    margin-bottom:25px;
+}
+
+.uploadForm .input{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    height: 30px;
+    border:solid 2px #1a61ff;
+    font-size:20px;
+    color:black;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: left;
+    transition:all 250ms ease;
+}
+.uploadForm h1{
+    margin-top: 0;
+    margin-bottom: 20px;
+    
+}
+.uploaddescription{
+    margin: 16px 0;
+    margin-bottom: 30px;
+    text-align:left;
+    width:47%; 
+    padding: 20px;
+    outline:none;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid #1a61ff ; 
+    font-size: 20px;
+    border-radius:3px;
+}
+
+.submitupload-button{
+    border: 1px solid #1a61ff;
+    padding: 11px 18px;
+    background-color: #1a61ff;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 50%;
+}
+.submitupload-button:hover{
+    border:1px solid #1a61ff;
+    background-color:white;
+    color:#1a61ff;
+}
